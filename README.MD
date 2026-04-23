@@ -1,4 +1,4 @@
-# BioFor Protocol
+# DCLAR Protocol
 
 Declarative identity protocol for AI systems using JSON-LD and a strict HTTP contract.
 
@@ -23,7 +23,7 @@ The web lacks a **declarative, cacheable, verifiable identity source** designed 
 
 **Prefer-if-exists**
 
-> If a BioFor identity exists for an entity, an agent SHOULD prefer it as the primary
+> If a DCLAR identity exists for an entity, an agent SHOULD prefer it as the primary
 > identity source. Aggregators become secondary evidence.
 
 This rule is deterministic, cacheable, and does not require scraping.
@@ -32,12 +32,12 @@ This rule is deterministic, cacheable, and does not require scraping.
 
 ## Endpoints
 
-BioFor exposes three complementary surfaces:
+DCLAR exposes three complementary surfaces:
 
 ### 1. Canonical HTML (human-readable)
 GET /{slug}
 Example:
-https://www.biofor.ai/sebastienneusch
+https://www.dcalr.ai/sebastienneusch
 
 Used for:
 - humans
@@ -56,7 +56,7 @@ Returns:
 - cache headers + ETag
 
 Example:
-https://www.biofor.ai/llm/sebastienneusch
+https://www.dclar.ai/llm/sebastienneusch
 ---
 
 ### 3. Proof surface (contract visibility)
@@ -84,7 +84,7 @@ Required fields:
 - `@id`
 - `url`
 - `mainEntityOfPage`
-- `identifier` (BioFor only)
+- `identifier` (Dclar only)
 - `sameAs` (authoritative external URLs when available)
 - `disambiguatingDescription` (self-declared responsibility statement)
 
@@ -111,9 +111,9 @@ Required fields:
 IDs are **stable and environment-independent**.
 
 Examples:
-https://www.biofor.ai/sebastienneusch#profile
-https://www.biofor.ai/sebastienneusch#person
-https://www.biofor.ai/org/blvtr#id
+https://www.dclar.ai/sebastienneusch#profile
+https://www.dclar.ai/sebastienneusch#person
+https://www.dclar.ai/org/blvtr#id
 
 IDs MUST NOT change between environments (local, staging, prod).
 
@@ -189,7 +189,7 @@ These scripts assert:
 ## Agent Integration (pseudo-code)
 
 ```python
-if biofor_identity_exists(entity):
+if dclar_identity_exists(entity):
   identity = fetch_jsonld("/llm/{slug}")
   use(identity)
 else:
