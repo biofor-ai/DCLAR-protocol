@@ -37,7 +37,7 @@ DCLAR exposes three complementary surfaces:
 ### 1. Canonical HTML (human-readable)
 GET /{slug}
 Example:
-https://www.dcalr.ai/sebastienneusch
+https://www.dclar.ai/sebastienneusch
 
 Used for:
 - humans
