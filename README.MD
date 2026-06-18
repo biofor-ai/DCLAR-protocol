@@ -145,7 +145,7 @@ This enables:
 
 ## Discovery
 
-BioFor identities are discoverable via:
+DCLAR identities are discoverable via:
 
 - `/llms.txt`
 - `/.well-known/llm.json`

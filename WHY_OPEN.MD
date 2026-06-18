@@ -1,6 +1,6 @@
-Why the BioFor Protocol is open
+Why the DCLAR Protocol is open
 
-The BioFor Protocol is open by design.
+The DCLAR Protocol is open by design.
 
 This is not an ideological choice. It is a technical and strategic necessity.
 
@@ -24,7 +24,7 @@ The protocol is not the product
 
 This repository defines how identity should be declared and served, not who is trusted.
 
-The BioFor Protocol intentionally does not provide:
+The DCLAR Protocol intentionally does not provide:
 	•	a registry of identities
 	•	verification or scoring logic
 	•	ranking or authority heuristics
@@ -55,7 +55,7 @@ Copying this repository does not copy:
 	•	accumulated trust
 	•	legal responsibility
 
-biofor.ai is a reference registry implementing this protocol.
+dclar.ai is a reference registry implementing this protocol.
 Its value comes from usage, persistence, and trust over time.
 
 The protocol is open so that the registry can be trusted.
@@ -72,7 +72,7 @@ Implementations create value.
 
 In short
 
-The BioFor Protocol is open because:
+The DCLAR Protocol is open because:
 	•	AI systems require open contracts
 	•	identity must be inspectable
 	•	neutrality builds long-term trust

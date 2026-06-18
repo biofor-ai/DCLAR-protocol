@@ -1,6 +1,6 @@
-# BioFor Protocol — Specification v0.1
+# DCLAR Protocol — Specification v0.1
 
-This document defines the normative rules of the BioFor declarative identity protocol.
+This document defines the normative rules of the DCLAR declarative identity protocol.
 
 The key words **MUST**, **MUST NOT**, **SHOULD**, and **MAY** are to be interpreted as described in RFC 2119.
 
@@ -74,9 +74,9 @@ Organization	#id
 
 Example
 
-https://www.biofor.ai/sebastienneusch#profile
-https://www.biofor.ai/sebastienneusch#person
-https://www.biofor.ai/org/blvtr#id
+https://www.dclar.ai/sebastienneusch#profile
+https://www.dclar.ai/sebastienneusch#person
+https://www.dclar.ai/org/blvtr#id
 
 Identifiers MUST NOT vary between environments.
 
@@ -86,7 +86,7 @@ Identifiers MUST NOT vary between environments.
 
 The sameAs field MUST:
 	•	reference authoritative external profiles when available
-	•	NOT include internal BioFor URLs
+	•	NOT include internal DCLAR URLs
 	•	NOT include organization URLs on Person entities
 
 Examples of valid sameAs targets:
@@ -104,11 +104,11 @@ disambiguatingDescription.
 This statement MUST:
 	•	indicate that the data is self-declared
 	•	include a last-updated date
-	•	identify BioFor as the declarative source
+	•	identify DCLAR as the declarative source
 
 Example:
 
-Self-declared by the person. Last updated 2026-01-18. BioFor is the primary declarative source.
+Self-declared by the person. Last updated 2026-01-18. DCLAR is the primary declarative source.
 
 
 ⸻
@@ -148,7 +148,7 @@ This enables deterministic, low-cost ingestion.
 
 7. Discovery
 
-BioFor identities MUST be discoverable via:
+DCLAR identities MUST be discoverable via:
 	•	/llms.txt
 	•	/.well-known/llm.json
 	•	sitemap.xml
@@ -169,7 +169,7 @@ Language selection MUST be deterministic.
 
 9. Non-goals
 
-The BioFor protocol does NOT:
+The DCLAR protocol does NOT:
 	•	infer identity
 	•	resolve conflicts automatically
 	•	rank entities
@@ -181,7 +181,7 @@ It only exposes a verifiable identity source.
 
 10. Versioning
 
-This document defines BioFor Protocol v0.1.
+This document defines DCLAR Protocol v0.1.
 
 Breaking changes MUST increment the major version.
 
